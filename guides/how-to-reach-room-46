@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Reach Room 46 in Blue Prince - Complete Walkthrough Guide | BluePrinceWiki</title>
+    <meta name="description" content="Complete step-by-step guide to reaching the elusive Room 46 in Blue Prince. Learn how to unlock all Antechamber doors, navigate the Underground, and solve the Rotating Gear puzzle.">
+    <meta name="keywords" content="Blue Prince Room 46, how to reach Room 46, Blue Prince walkthrough, Antechamber guide, Underground lever, Inner Sanctum">
+    <link rel="canonical" href="https://blueprincewiki.com/guides/how-to-reach-room-46/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="How to Reach Room 46 in Blue Prince - Complete Walkthrough">
+    <meta property="og:description" content="Step-by-step guide to reaching Room 46. Unlock Antechamber doors, navigate the Underground, and claim your inheritance.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blueprincewiki.com/guides/how-to-reach-room-46/">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-primary: #1a365d;
+            --color-primary-light: #2c5282;
+            --color-primary-dark: #0f2744;
+            --color-accent: #c9a227;
+            --color-accent-light: #d4b84a;
+            --color-bg: #f7f5f0;
+            --color-bg-dark: #e8e4db;
+            --color-text: #2d3748;
+            --color-text-light: #4a5568;
+            --color-text-muted: #718096;
+            --color-border: #cbd5e0;
+            --color-success: #0d9488;
+            --color-warning: #d97706;
+            --color-danger: #dc2626;
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Source Sans 3', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+            --max-width: 900px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(rgba(26, 54, 93, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(26, 54, 93, 0.02) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .header-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--color-primary-dark);
+        }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .logo-text span {
+            color: var(--color-accent);
+        }
+
+        .nav {
+            display: flex;
+            gap: 8px;
+        }
+
+        .nav a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .nav a:hover {
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 16px 24px;
+        }
+
+        .breadcrumb a {
+            color: var(--color-text-muted);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--color-primary);
+        }
+
+        .breadcrumb span {
+            color: var(--color-text-muted);
+            font-size: 14px;
+            margin: 0 8px;
+        }
+
+        /* Article */
+        .article {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px 80px;
+        }
+
+        .article-header {
+            margin-bottom: 40px;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: var(--color-text-muted);
+        }
+
+        .article-meta .tag {
+            background: var(--color-primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .article h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .article-intro {
+            font-size: 18px;
+            color: var(--color-text-light);
+            line-height: 1.8;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        /* Table of Contents */
+        .toc {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 32px 0;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-border);
+        }
+
+        .toc h2 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--color-primary-dark);
+        }
+
+        .toc ol {
+            list-style: none;
+            counter-reset: toc;
+        }
+
+        .toc li {
+            counter-increment: toc;
+            margin-bottom: 8px;
+        }
+
+        .toc li::before {
+            content: counter(toc) ".";
+            color: var(--color-accent);
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .toc a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .toc a:hover {
+            color: var(--color-primary);
+        }
+
+        /* Content */
+        .content h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 600;
+            color: var(--color-primary-dark);
+            margin: 48px 0 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--color-accent);
+        }
+
+        .content h3 {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin: 32px 0 16px;
+        }
+
+        .content p {
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .content ul, .content ol {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .content li {
+            margin-bottom: 8px;
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            border-left: 4px solid var(--color-primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .info-box.warning {
+            border-left-color: var(--color-warning);
+            background: #fffbeb;
+        }
+
+        .info-box.danger {
+            border-left-color: var(--color-danger);
+            background: #fef2f2;
+        }
+
+        .info-box.success {
+            border-left-color: var(--color-success);
+            background: #f0fdfa;
+        }
+
+        .info-box-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-box.warning .info-box-title {
+            color: var(--color-warning);
+        }
+
+        .info-box.danger .info-box-title {
+            color: var(--color-danger);
+        }
+
+        .info-box.success .info-box-title {
+            color: var(--color-success);
+        }
+
+        /* Step Box */
+        .step-box {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 24px 0;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--color-border);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .step-title {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--color-primary-dark);
+        }
+
+        .step-content {
+            padding-left: 56px;
+        }
+
+        .step-content p {
+            margin-bottom: 12px;
+        }
+
+        /* Table */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 24px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        th {
+            background: var(--color-primary);
+            color: white;
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--color-border);
+            font-size: 14px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: var(--color-bg);
+        }
+
+        /* Code/Key */
+        code {
+            font-family: var(--font-mono);
+            background: var(--color-bg-dark);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: var(--color-primary);
+        }
+
+        /* Highlight */
+        .highlight {
+            background: linear-gradient(120deg, rgba(201, 162, 39, 0.2) 0%, rgba(201, 162, 39, 0.2) 100%);
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        /* Related Articles */
+        .related {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .related h2 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--color-primary-dark);
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .related-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--color-text);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-border);
+            transition: all 0.2s ease;
+        }
+
+        .related-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .related-card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--color-primary-dark);
+        }
+
+        .related-card p {
+            font-size: 14px;
+            color: var(--color-text-muted);
+            margin: 0;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--color-primary-dark);
+            color: rgba(255,255,255,0.7);
+            padding: 40px 24px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+
+            .article h1 {
+                font-size: 28px;
+            }
+
+            .step-content {
+                padding-left: 0;
+                margin-top: 12px;
+            }
+
+            .content h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <div class="logo-icon">46</div>
+                <div class="logo-text">BluePrince<span>Wiki</span></div>
+            </a>
+            <nav class="nav">
+                <a href="/rooms/">Rooms</a>
+                <a href="/puzzles/">Puzzles</a>
+                <a href="/items/">Items</a>
+                <a href="/guides/">Guides</a>
+                <a href="/secrets/">Secrets</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <a href="/guides/">Guides</a>
+        <span>›</span>
+        <a href="/guides/how-to-reach-room-46/">How to Reach Room 46</a>
+    </nav>
+
+    <!-- Article -->
+    <article class="article">
+        <header class="article-header">
+            <div class="article-meta">
+                <span class="tag">Walkthrough</span>
+                <span>Updated: November 2025</span>
+                <span>~15 min read</span>
+            </div>
+            <h1>How to Reach Room 46 in Blue Prince</h1>
+            <p class="article-intro">
+                Room 46 is your ultimate goal in Blue Prince – the mysterious room that holds the key to your inheritance at Mt. Holly Manor. This comprehensive guide walks you through every step: unlocking the Antechamber doors, obtaining the Basement Key, navigating the Underground, and finally reaching the elusive Room 46.
+            </p>
+        </header>
+
+        <div class="info-box warning">
+            <div class="info-box-title">⚠️ Spoiler Warning</div>
+            <p>This guide contains major spoilers for Blue Prince's main objective. If you prefer to discover solutions yourself, proceed with caution. We recommend trying on your own first – the journey of discovery is part of the magic.</p>
+        </div>
+
+        <!-- Table of Contents -->
+        <nav class="toc">
+            <h2>Table of Contents</h2>
+            <ol>
+                <li><a href="#overview">Overview: The Path to Room 46</a></li>
+                <li><a href="#antechamber">Step 1: Reach the Antechamber</a></li>
+                <li><a href="#levers">Step 2: Unlock an Antechamber Door</a></li>
+                <li><a href="#basement-key">Step 3: Get the Basement Key</a></li>
+                <li><a href="#underground">Step 4: Navigate the Underground</a></li>
+                <li><a href="#north-lever">Step 5: Pull the North Lever</a></li>
+                <li><a href="#enter-room-46">Step 6: Enter Room 46</a></li>
+                <li><a href="#tips">Pro Tips for Success</a></li>
+            </ol>
+        </nav>
+
+        <div class="content">
+            <!-- Overview -->
+            <h2 id="overview">Overview: The Path to Room 46</h2>
+            <p>
+                Blue Prince has a simple premise: find Room 46 in a manor with only 45 rooms. But the execution is anything but simple. Room 46 is located behind the <strong>north door of the Antechamber</strong>, which sits at Rank 9 (the top) of your blueprint.
+            </p>
+            <p>
+                Here's the challenge: <span class="highlight">all four Antechamber doors are sealed by default</span>. You must find specific levers hidden throughout the estate to unlock them. And even then, the north door – the one leading to Room 46 – can only be opened from the Underground.
+            </p>
+            <p>
+                The journey typically takes multiple in-game days (runs) to complete. Don't expect to reach Room 46 on your first attempt. Each run builds upon the previous one through permanent unlocks and accumulated knowledge.
+            </p>
+
+            <!-- Antechamber Doors Summary -->
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Door</th>
+                            <th>Lever Location</th>
+                            <th>Requirements</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>West Door</strong></td>
+                            <td>Secret Garden</td>
+                            <td>Secret Garden Key + solve wind vane puzzle</td>
+                        </tr>
+                        <tr>
+                            <td><strong>East Door</strong></td>
+                            <td>Great Hall</td>
+                            <td>7 Keys (or Foyer room, or Lockpick)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>South Door</strong></td>
+                            <td>Greenhouse</td>
+                            <td>Broken Lever item</td>
+                        </tr>
+                        <tr>
+                            <td><strong>North Door</strong></td>
+                            <td>Inner Sanctum (Underground)</td>
+                            <td>Basement Key + Underground access</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Step 1: Antechamber -->
+            <h2 id="antechamber">Step 1: Reach the Antechamber</h2>
+            <p>
+                The <strong>Antechamber</strong> is a fixed room that always appears at the center of Rank 9 on your blueprint. Unlike other rooms, you don't need to draft it – it's always there. Your task is to draft rooms that create a path from the Entrance Hall (Rank 1) all the way up to the Antechamber.
+            </p>
+
+            <div class="info-box">
+                <div class="info-box-title">💡 Key Insight</div>
+                <p>Don't rush directly toward the Antechamber early in a run. Gather resources (keys, gems, steps) from lower ranks first. The Antechamber doors are sealed anyway – you need to find a lever first.</p>
+            </div>
+
+            <h3>Recommended Strategy</h3>
+            <ul>
+                <li>Focus on rooms in the lower ranks (1-5) to accumulate keys, gems, and coins</li>
+                <li>Draft rooms with multiple door connections to maintain flexibility</li>
+                <li>Look for lever locations (Secret Garden, Great Hall, Greenhouse) as you explore</li>
+                <li>Only build toward the Antechamber once you've found and activated a lever</li>
+            </ul>
+
+            <!-- Step 2: Levers -->
+            <h2 id="levers">Step 2: Unlock an Antechamber Door</h2>
+            <p>
+                You only need to unlock <strong>one door</strong> to enter the Antechamber. Here are your three main options (the north door requires the Underground, covered later):
+            </p>
+
+            <div class="step-box">
+                <div class="step-header">
+                    <div class="step-number">A</div>
+                    <div class="step-title">Secret Garden → West Door (Recommended)</div>
+                </div>
+                <div class="step-content">
+                    <p>The easiest and most reliable method. You need:</p>
+                    <ul>
+                        <li>Find the <strong>Secret Garden Key</strong> (green key with flower icon) – spawns randomly in rooms</li>
+                        <li>Draft a room on the far west or east column (column 1 or 5) with a locked door facing outward</li>
+                        <li>Use the Secret Garden Key on that door to create the Secret Garden</li>
+                        <li>Inside, find the fountain with wind vanes on top</li>
+                        <li>Turn both hand cranks until <strong>all arrows point west</strong> (toward the wall)</li>
+                        <li>A hidden alcove opens, revealing the lever – pull it!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-header">
+                    <div class="step-number">B</div>
+                    <div class="step-title">Great Hall → East Door</div>
+                </div>
+                <div class="step-content">
+                    <p>Requires resources but is straightforward once drafted:</p>
+                    <ul>
+                        <li>Draft the <strong>Great Hall</strong> (appears in mid-to-upper ranks)</li>
+                        <li>The Great Hall has <strong>7 locked doors</strong> – the lever is behind one of them</li>
+                        <li>Bring 7 Keys, or use a Lockpick, or draft the <strong>Foyer</strong> first (unlocks all hallway doors)</li>
+                        <li>The lever location changes each day – check the miniature model in Drafting Studio for hints</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-header">
+                    <div class="step-number">C</div>
+                    <div class="step-title">Greenhouse → South Door</div>
+                </div>
+                <div class="step-content">
+                    <p>More RNG-dependent but viable:</p>
+                    <ul>
+                        <li>Draft the <strong>Greenhouse</strong> (rare Green room, appears on east side)</li>
+                        <li>The lever on the wall is broken – you need a <strong>Broken Lever</strong> item</li>
+                        <li>Broken Lever spawns randomly (often in Security, Spare Room, or Workshop)</li>
+                        <li>Attach the Broken Lever to repair the mechanism, then pull</li>
+                    </ul>
+                    <p><strong>Tip:</strong> Store the Broken Lever in a <code>Coat Check</code> room if you find it before the Greenhouse. Items stored there persist between days.</p>
+                </div>
+            </div>
+
+            <!-- Step 3: Basement Key -->
+            <h2 id="basement-key">Step 3: Get the Basement Key</h2>
+            <p>
+                Once you've unlocked at least one door and drafted a path to the Antechamber, enter it. You'll find:
+            </p>
+            <ul>
+                <li>A pedestal rises from the center with the <strong>Basement Key</strong></li>
+                <li>A note that reads: <em>"To continue up, you must go down"</em></li>
+                <li>The north door (to Room 46) is still sealed</li>
+            </ul>
+
+            <div class="info-box success">
+                <div class="info-box-title">✅ Important: Permanent Unlocks</div>
+                <p>Any door you unlock with the Basement Key remains <strong>permanently unlocked</strong> even after your run ends. This is crucial – it means you only need to do this once per door.</p>
+            </div>
+
+            <p>The Basement Key can unlock two doors:</p>
+            <ol>
+                <li><strong>Foundation elevator door</strong> – at the bottom of the Foundation room's elevator</li>
+                <li><strong>Fountain entrance</strong> – at the bottom of the drained Fountain outside</li>
+            </ol>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Don't Lose the Key!</div>
+                <p>If your run ends while holding the Basement Key, you lose it and must return to the Antechamber to get a new one. Store it in a <code>Coat Check</code> room if you're running low on steps.</p>
+            </div>
+
+            <!-- Step 4: Underground -->
+            <h2 id="underground">Step 4: Navigate the Underground</h2>
+            <p>
+                The Underground is a maze-like area beneath Mt. Holly Manor. Your goal is to reach the <strong>Inner Sanctum</strong>, where the north lever is located.
+            </p>
+
+            <h3>Underground Entrances</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Entrance</th>
+                            <th>How to Access</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Foundation</strong></td>
+                            <td>Draft Foundation, activate elevator, use Basement Key</td>
+                            <td>Most reliable entrance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fountain</strong></td>
+                            <td>Drain Fountain via Pump Room, use Basement Key at bottom</td>
+                            <td>Requires Pool + Pump Room puzzle</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tomb</strong></td>
+                            <td>Draft Tomb at West Gate, solve angel statue puzzle</td>
+                            <td>RNG-dependent (may not appear)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Precipice</strong></td>
+                            <td>Light 4 outdoor flames, then torch room</td>
+                            <td>Permanent entrance once opened</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cliffside</strong></td>
+                            <td>Use Power Hammer to break collapsed tunnel</td>
+                            <td>Requires Power Hammer crafting</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>The Foundation Route (Recommended)</h3>
+            <p>The Foundation is a <strong>permanent room</strong> – once drafted, it stays in the same spot forever. Here's how to use it:</p>
+            <ol>
+                <li>Draft the Foundation anywhere on the map</li>
+                <li>To activate its elevator, you need to access its "back wall" (the side with no doors)</li>
+                <li>Draft a room adjacent to the Foundation's back wall to reveal a lever</li>
+                <li>Pull the lever to enable the elevator</li>
+                <li>Ride the elevator down and use the Basement Key on the locked door</li>
+            </ol>
+
+            <h3>Moving the Minecart</h3>
+            <p>
+                A <strong>minecart blocks the tunnel</strong> between the Reservoir and the Rotating Gear room. You must move it to access all areas of the Underground.
+            </p>
+            <ul>
+                <li>The minecart can only be pushed/pulled from the <strong>south side</strong> of the Reservoir</li>
+                <li>Access the south side via the Fountain entrance or Tomb entrance</li>
+                <li>Pull the minecart all the way back toward you</li>
+                <li>Once moved, it stays in that position permanently</li>
+            </ul>
+
+            <!-- Step 5: North Lever -->
+            <h2 id="north-lever">Step 5: Pull the North Lever</h2>
+            <p>
+                The north lever is located in the <strong>Inner Sanctum</strong>, accessible through the <strong>Rotating Gear Puzzle</strong> area.
+            </p>
+
+            <h3>Rotating Gear Puzzle</h3>
+            <p>The Rotating Gear room features a massive gear that bridges different ledges. Here's the quickest path to the Inner Sanctum:</p>
+            <ol>
+                <li>Enter from the Foundation/north side after moving the minecart</li>
+                <li>Use the control panel to rotate the gear until a spoke connects your ledge to the ledge directly right</li>
+                <li>Walk across and use that control panel to rotate 5 times</li>
+                <li>The long spokes should now connect to the <strong>Underpass</strong> (metal-plated tunnel)</li>
+                <li>Walk through the Underpass to reach the Inner Sanctum</li>
+            </ol>
+
+            <p>
+                Inside the Inner Sanctum, you'll find a circular room with 8 locked doors and a <strong>lever in the center</strong>. Pull this lever to unlock the north door of the Antechamber.
+            </p>
+
+            <div class="info-box">
+                <div class="info-box-title">💡 Note</div>
+                <p>The 8 doors in the Inner Sanctum lead to post-game content involving Sanctum Keys. You don't need to open them to reach Room 46.</p>
+            </div>
+
+            <!-- Step 6: Enter Room 46 -->
+            <h2 id="enter-room-46">Step 6: Enter Room 46</h2>
+            <p>
+                With the north lever pulled, return to the Antechamber (either by backtracking or starting a new run). The north door – marked with a <strong>crescent moon symbol</strong> – is now open.
+            </p>
+            <p>
+                Walk through the door to enter <strong>Room 46</strong>. Congratulations! Enjoy the cutscene and credits.
+            </p>
+
+            <div class="info-box warning">
+                <div class="info-box-title">⚠️ Important</div>
+                <p>Antechamber doors reset every day. You'll need to pull a lever again (east/west/south) to re-enter the Antechamber each run. However, the north door stays unlocked once you've pulled the Underground lever.</p>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">🎉 But Wait, There's More!</div>
+                <p>Reaching Room 46 is just the beginning. Blue Prince has extensive post-game content with additional puzzles, Sanctum Keys, hidden rooms, and deeper lore. Return to Room 46 on subsequent runs to explore further mysteries.</p>
+            </div>
+
+            <!-- Pro Tips -->
+            <h2 id="tips">Pro Tips for Success</h2>
+            <ul>
+                <li><strong>Use Coat Check:</strong> Store valuable items (Basement Key, Broken Lever) to preserve them between runs</li>
+                <li><strong>Draft Bedrooms:</strong> Bedrooms restore steps, helping you explore further each day</li>
+                <li><strong>Unlock Permanent Upgrades First:</strong> Apple Orchard (+20 steps), Gemstone Cavern (+2 gems) make future runs easier</li>
+                <li><strong>Take Notes:</strong> Use a physical notebook or screenshot clues – you'll need them later</li>
+                <li><strong>Don't Build Straight to Antechamber:</strong> Gather resources first, find a lever, then build your path</li>
+                <li><strong>The Foyer is Powerful:</strong> Unlocks all hallway doors, making Great Hall exploration trivial</li>
+            </ul>
+        </div>
+
+        <!-- Related Articles -->
+        <section class="related">
+            <h2>Related Guides</h2>
+            <div class="related-grid">
+                <a href="/puzzles/boiler-room/" class="related-card">
+                    <h3>Boiler Room Puzzle Guide</h3>
+                    <p>Solve the steam valve puzzle and drain the Fountain</p>
+                </a>
+                <a href="/guides/safe-codes/" class="related-card">
+                    <h3>All Safe Codes & Passwords</h3>
+                    <p>Complete list of every code in the game</p>
+                </a>
+                <a href="/guides/beginners/" class="related-card">
+                    <h3>Beginner's Guide: 20 Tips</h3>
+                    <p>Essential tips for new players</p>
+                </a>
+                <a href="/upgrades/" class="related-card">
+                    <h3>Permanent Upgrades</h3>
+                    <p>How to unlock all permanent bonuses</p>
+                </a>
+            </div>
+        </section>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 BluePrinceWiki.com · Not affiliated with Dogubomb or Raw Fury</p>
+        <p style="margin-top: 8px;">
+            <a href="https://store.steampowered.com/app/1569580/Blue_Prince/" target="_blank">Get Blue Prince on Steam</a>
+        </p>
+    </footer>
+</body>
+</html>
