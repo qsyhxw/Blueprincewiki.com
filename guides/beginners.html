@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Prince Beginner's Guide - 20 Essential Tips | BluePrinceWiki</title>
+    <meta name="description" content="Essential beginner's guide for Blue Prince with 20 tips every new player needs to know. Learn about drafting, resources, permanent upgrades, and the best strategies for reaching Room 46.">
+    <meta name="keywords" content="Blue Prince guide, Blue Prince tips, beginner guide, how to play Blue Prince, Blue Prince strategies, Room 46">
+    <link rel="canonical" href="https://blueprincewiki.com/guides/beginners/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-primary: #1a365d;
+            --color-primary-light: #2c5282;
+            --color-primary-dark: #0f2744;
+            --color-accent: #c9a227;
+            --color-bg: #f7f5f0;
+            --color-bg-dark: #e8e4db;
+            --color-text: #2d3748;
+            --color-text-light: #4a5568;
+            --color-text-muted: #718096;
+            --color-border: #cbd5e0;
+            --color-success: #0d9488;
+            --color-warning: #d97706;
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Source Sans 3', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --max-width: 900px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: 
+                linear-gradient(rgba(26, 54, 93, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(26, 54, 93, 0.02) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 64px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--color-accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--color-primary-dark);
+        }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .logo-text span { color: var(--color-accent); }
+
+        .nav { display: flex; gap: 8px; }
+        .nav a {
+            color: rgba(255,255,255,0.85);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .nav a:hover { background: rgba(255,255,255,0.1); color: white; }
+
+        .breadcrumb { max-width: var(--max-width); margin: 0 auto; padding: 16px 24px; }
+        .breadcrumb a { color: var(--color-text-muted); text-decoration: none; font-size: 14px; }
+        .breadcrumb a:hover { color: var(--color-primary); }
+        .breadcrumb span { color: var(--color-text-muted); font-size: 14px; margin: 0 8px; }
+
+        .article { max-width: var(--max-width); margin: 0 auto; padding: 0 24px 80px; }
+        .article-header { margin-bottom: 40px; }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: var(--color-text-muted);
+        }
+
+        .article-meta .tag {
+            background: var(--color-success);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .article h1 {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 5vw, 42px);
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            line-height: 1.2;
+            margin-bottom: 16px;
+        }
+
+        .article-intro {
+            font-size: 18px;
+            color: var(--color-text-light);
+            line-height: 1.8;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .toc {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 32px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--color-border);
+        }
+
+        .toc h2 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--color-primary-dark);
+        }
+
+        .toc-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px 24px;
+        }
+
+        .toc a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            padding: 4px 0;
+        }
+
+        .toc a:hover { color: var(--color-primary); }
+        .toc a::before {
+            content: attr(data-num);
+            color: var(--color-accent);
+            font-weight: 600;
+            margin-right: 8px;
+        }
+
+        .content h2 {
+            font-family: var(--font-display);
+            font-size: 26px;
+            font-weight: 600;
+            color: var(--color-primary-dark);
+            margin: 48px 0 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--color-accent);
+        }
+
+        .content p { margin-bottom: 16px; font-size: 16px; }
+        .content ul, .content ol { margin: 16px 0; padding-left: 24px; }
+        .content li { margin-bottom: 8px; }
+
+        .tip-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            border: 1px solid var(--color-border);
+            display: grid;
+            grid-template-columns: 48px 1fr;
+            gap: 16px;
+            align-items: start;
+        }
+
+        .tip-number {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .tip-content h3 {
+            font-family: var(--font-display);
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--color-primary-dark);
+            margin-bottom: 8px;
+        }
+
+        .tip-content p { margin-bottom: 0; font-size: 15px; color: var(--color-text-light); }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(201, 162, 39, 0.2) 0%, rgba(201, 162, 39, 0.2) 100%);
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        .info-box {
+            background: white;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+            border-left: 4px solid var(--color-primary);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .info-box.warning { border-left-color: var(--color-warning); background: #fffbeb; }
+        .info-box.success { border-left-color: var(--color-success); background: #f0fdfa; }
+
+        .info-box-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-box.warning .info-box-title { color: var(--color-warning); }
+        .info-box.success .info-box-title { color: var(--color-success); }
+
+        code {
+            font-family: var(--font-mono);
+            background: var(--color-bg-dark);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: var(--color-primary);
+        }
+
+        .related {
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .related h2 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--color-primary-dark);
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .related-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--color-text);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--color-border);
+            transition: all 0.2s ease;
+        }
+
+        .related-card:hover { box-shadow: 0 4px 6px rgba(0,0,0,0.1); transform: translateY(-2px); }
+        .related-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: var(--color-primary-dark); }
+        .related-card p { font-size: 14px; color: var(--color-text-muted); margin: 0; }
+
+        .footer {
+            background: var(--color-primary-dark);
+            color: rgba(255,255,255,0.7);
+            padding: 40px 24px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer a { color: var(--color-accent); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .nav { display: none; }
+            .article h1 { font-size: 28px; }
+            .toc-grid { grid-template-columns: 1fr; }
+            .tip-card { grid-template-columns: 1fr; }
+            .tip-number { width: 40px; height: 40px; font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="/" class="logo">
+                <div class="logo-icon">46</div>
+                <div class="logo-text">BluePrince<span>Wiki</span></div>
+            </a>
+            <nav class="nav">
+                <a href="/rooms/">Rooms</a>
+                <a href="/puzzles/">Puzzles</a>
+                <a href="/items/">Items</a>
+                <a href="/guides/">Guides</a>
+                <a href="/secrets/">Secrets</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <a href="/guides/">Guides</a>
+        <span>›</span>
+        <a href="/guides/beginners/">Beginner's Guide</a>
+    </nav>
+
+    <article class="article">
+        <header class="article-header">
+            <div class="article-meta">
+                <span class="tag">Beginner</span>
+                <span>Updated: November 2025</span>
+                <span>~12 min read</span>
+            </div>
+            <h1>Beginner's Guide: 20 Essential Tips</h1>
+            <p class="article-intro">
+                New to Blue Prince? This guide covers everything you need to know before stepping into Mt. Holly Manor. From understanding the roguelike mechanics to unlocking permanent upgrades, these 20 tips will help you navigate the ever-changing mansion and eventually reach the mysterious Room 46.
+            </p>
+        </header>
+
+        <nav class="toc">
+            <h2>Quick Navigation</h2>
+            <div class="toc-grid">
+                <a href="#tip-1" data-num="1.">Take Notes – Seriously</a>
+                <a href="#tip-2" data-num="2.">Knowledge is Your Currency</a>
+                <a href="#tip-3" data-num="3.">Don't Rush to Room 46</a>
+                <a href="#tip-4" data-num="4.">Explore the Grounds First</a>
+                <a href="#tip-5" data-num="5.">Unlock Apple Orchard ASAP</a>
+                <a href="#tip-6" data-num="6.">Build Wide, Not Tall</a>
+                <a href="#tip-7" data-num="7.">Dead Ends Are Useful</a>
+                <a href="#tip-8" data-num="8.">Save Resources Early</a>
+                <a href="#tip-9" data-num="9.">Draft New Rooms</a>
+                <a href="#tip-10" data-num="10.">Check Every Corner</a>
+                <a href="#tip-11" data-num="11.">Use the Blueprint Map</a>
+                <a href="#tip-12" data-num="12.">Food Restores Steps</a>
+                <a href="#tip-13" data-num="13.">Coat Check Saves Items</a>
+                <a href="#tip-14" data-num="14.">Tools Have Infinite Uses</a>
+                <a href="#tip-15" data-num="15.">Don't Fear "Bad" Runs</a>
+                <a href="#tip-16" data-num="16.">Exit via Summary Screen</a>
+                <a href="#tip-17" data-num="17.">Learn Room Colors</a>
+                <a href="#tip-18" data-num="18.">Paintings Spell Clues</a>
+                <a href="#tip-19" data-num="19.">Permanent Upgrades Exist</a>
+                <a href="#tip-20" data-num="20.">Room 46 Isn't the End</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <h2>Core Mindset Tips</h2>
+
+            <div class="tip-card" id="tip-1">
+                <div class="tip-number">1</div>
+                <div class="tip-content">
+                    <h3>Take Notes – Seriously</h3>
+                    <p>Blue Prince has no in-game journal. You <strong>need</strong> a physical notebook or note-taking app. Document safe codes, puzzle clues, room locations, and anything suspicious. Information from Day 1 might be crucial on Day 30. Screenshots help, but written notes organized by topic (Memos, Puzzles, Rooms) are even better.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-2">
+                <div class="tip-number">2</div>
+                <div class="tip-content">
+                    <h3>Knowledge is Your Only Permanent Currency</h3>
+                    <p>Keys, gems, and coins reset every day. But what you <em>learn</em> stays with you forever. The real "meta progression" in Blue Prince is the knowledge you accumulate. Every puzzle you partially solve, every clue you find, every room you discover – that's your actual progress.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-3">
+                <div class="tip-number">3</div>
+                <div class="tip-content">
+                    <h3>Don't Rush to Room 46</h3>
+                    <p>Yes, Room 46 is your goal. No, you shouldn't beeline for it. The Antechamber sits at Rank 9 with locked doors that require specific levers. Rushing there guarantees failure. Instead, focus on exploration, resource gathering, and unlocking permanent upgrades first. You'll naturally progress toward Room 46 as you learn more.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-4">
+                <div class="tip-number">4</div>
+                <div class="tip-content">
+                    <h3>Explore the Outdoor Grounds</h3>
+                    <p>Before diving deep into the manor, step outside! Leave through the front door and explore. You'll find your campsite, locked gates (with important upgrades behind them), a collapsed tunnel, and mysterious platforms. The outdoor areas are just as puzzle-rich as the interior.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-5">
+                <div class="tip-number">5</div>
+                <div class="tip-content">
+                    <h3>Unlock the Apple Orchard First</h3>
+                    <p>This should be your <strong>first priority</strong>. Find the gate near your campsite and enter code <code>1128</code>. This unlocks a <span class="highlight">permanent +20 steps</span> bonus every day. That's 70 steps instead of 50 – a massive advantage for all future runs!</p>
+                </div>
+            </div>
+
+            <h2>Drafting & Exploration Tips</h2>
+
+            <div class="tip-card" id="tip-6">
+                <div class="tip-number">6</div>
+                <div class="tip-content">
+                    <h3>Build Wide, Not Tall</h3>
+                    <p>Early game, focus on filling the lower ranks (1-5) horizontally rather than pushing straight up to Rank 9. This approach gives you more room options, more resources, and more puzzle opportunities. Use the full 5-column grid to your advantage.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-7">
+                <div class="tip-number">7</div>
+                <div class="tip-content">
+                    <h3>Dead Ends Are Actually Useful</h3>
+                    <p>Don't avoid dead-end rooms! They remove themselves from the drafting pool (increasing your chances of getting better rooms later), often contain useful items, and can still provide puzzle clues. Place them strategically on paths you don't need to continue.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-8">
+                <div class="tip-number">8</div>
+                <div class="tip-content">
+                    <h3>Save Resources in Lower Ranks</h3>
+                    <p>Don't spend gems and keys freely in Ranks 1-4. Higher ranks have rooms that <em>require</em> gems to draft (like Laboratory, Vault) and more locked doors. Hoard your resources early so you have options later. The Nook always gives a key; the Den always gives a gem.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-9">
+                <div class="tip-number">9</div>
+                <div class="tip-content">
+                    <h3>Always Draft New Rooms</h3>
+                    <p>When a room you've never seen appears in your options, <strong>draft it</strong> – even if it doesn't fit your plan. New rooms mean new puzzles, new clues, and new items. Routine is your enemy. Discovery is your friend. Break your patterns!</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-10">
+                <div class="tip-number">10</div>
+                <div class="tip-content">
+                    <h3>Check Every Corner of Every Room</h3>
+                    <p>Items blend into the environment. Look under tables, behind furniture, on shelves, inside drawers. Your cursor changes icon when hovering over interactable objects. Don't just grab the obvious stuff – there are hidden gems, keys, and coins everywhere. Books often contain clues too!</p>
+                </div>
+            </div>
+
+            <h2>Resource & Item Tips</h2>
+
+            <div class="tip-card" id="tip-11">
+                <div class="tip-number">11</div>
+                <div class="tip-content">
+                    <h3>Use the Blueprint Map (R2/RT)</h3>
+                    <p>Press R2/RT to view your current blueprint layout at any time. This shows room connections, door directions, and helps you plan your path. You can also see room effects and requirements before committing to a draft. Use it constantly!</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-12">
+                <div class="tip-number">12</div>
+                <div class="tip-content">
+                    <h3>Food Restores Steps</h3>
+                    <p>Running low on steps? Eat food! Apples, sandwiches, and other edibles restore steps. You can find food in rooms or buy it from shops. Also, Bedrooms often give step bonuses, and some items (like the Sleeping Mask) provide extra steps.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-13">
+                <div class="tip-number">13</div>
+                <div class="tip-content">
+                    <h3>Coat Check Preserves Items Between Days</h3>
+                    <p>This is huge! Items stored in the <strong>Coat Check</strong> room persist between runs. Found a Basement Key but ran out of steps? Store it! Got a Broken Lever but no Greenhouse? Store it! Draft the Coat Check on your next run to retrieve stored items.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-14">
+                <div class="tip-number">14</div>
+                <div class="tip-content">
+                    <h3>Tools Have Infinite Uses</h3>
+                    <p>The Magnifying Glass, Metal Detector, Sledgehammer, Shovel, and other tools never break or run out. Once you have one, use it everywhere! Check desks with the Magnifying Glass, scan floors with the Metal Detector, break trunks with the Sledgehammer. No reason to be conservative.</p>
+                </div>
+            </div>
+
+            <h2>Mindset & Strategy Tips</h2>
+
+            <div class="tip-card" id="tip-15">
+                <div class="tip-number">15</div>
+                <div class="tip-content">
+                    <h3>There Are No "Bad" Runs</h3>
+                    <p>Every run teaches you something. Got terrible room options? You still found new clues. Ran out of steps early? You still made discoveries. Blue Prince has no time limit and no penalty for many days. Embrace the randomness as learning opportunities, not failures.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-16">
+                <div class="tip-number">16</div>
+                <div class="tip-content">
+                    <h3>Save & Exit Only on Summary Screen</h3>
+                    <p>Saving mid-run ends your current day! Always finish your run first, then save from the summary screen. If you need a break, put your console in rest mode – but be aware that auto-updates could close the game and end your run.</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-17">
+                <div class="tip-number">17</div>
+                <div class="tip-content">
+                    <h3>Learn the Room Color System</h3>
+                    <p><strong>Green rooms</strong> are utility (Bedroom, Den, Kitchen) – often free or cheap, good for resources. <strong>Red rooms</strong> (Gymnasium, Chapel) have costs or effects but contain power ducts. <strong>Gear rooms</strong> (Workshop, Security) have special functions. <strong>Blue rooms</strong> are rare and valuable.</p>
+                </div>
+            </div>
+
+            <h2>Hidden Secrets Tips</h2>
+
+            <div class="tip-card" id="tip-18">
+                <div class="tip-number">18</div>
+                <div class="tip-content">
+                    <h3>Paintings Spell Out Clues</h3>
+                    <p>There are 44 pairs of paintings throughout the manor. Each pair highlights a letter. Together, they spell messages that hint at safe codes and puzzle solutions. This is a meta-puzzle that connects multiple rooms – write down every painting you see!</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-19">
+                <div class="tip-number">19</div>
+                <div class="tip-content">
+                    <h3>Permanent Upgrades Exist</h3>
+                    <p>Beyond knowledge, there are actual permanent unlocks: <strong>Apple Orchard</strong> (+20 steps), <strong>Gemstone Cavern</strong> (+2 gems), <strong>Blackbridge Grotto</strong> (free terminal access), and <strong>West Gate</strong> (outdoor access). Prioritize finding and unlocking these!</p>
+                </div>
+            </div>
+
+            <div class="tip-card" id="tip-20">
+                <div class="tip-number">20</div>
+                <div class="tip-content">
+                    <h3>Reaching Room 46 Is Just the Beginning</h3>
+                    <p>Here's a secret: the main objective is essentially the tutorial. After you reach Room 46 and watch the credits, the <em>real</em> game begins. There are Sanctum Keys to find, deeper puzzles to solve, and mysteries that make the first goal look simple. Don't stop at the credits!</p>
+                </div>
+            </div>
+
+            <div class="info-box success">
+                <div class="info-box-title">✅ Quick Start Checklist</div>
+                <ul>
+                    <li>Get a notebook ready (physical or digital)</li>
+                    <li>Go outside and unlock the Apple Orchard (code: 1128)</li>
+                    <li>Focus on exploration, not rushing to Rank 9</li>
+                    <li>Draft new rooms whenever possible</li>
+                    <li>Save gems and keys for higher ranks</li>
+                    <li>Check every corner of every room</li>
+                    <li>Remember: there's no time limit!</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="related">
+            <h2>Related Guides</h2>
+            <div class="related-grid">
+                <a href="/guides/how-to-reach-room-46/" class="related-card">
+                    <h3>How to Reach Room 46</h3>
+                    <p>Complete walkthrough for the main objective</p>
+                </a>
+                <a href="/guides/safe-codes/" class="related-card">
+                    <h3>All Safe Codes</h3>
+                    <p>Every code and password in the game</p>
+                </a>
+                <a href="/puzzles/boiler-room/" class="related-card">
+                    <h3>Boiler Room Puzzle</h3>
+                    <p>Power up the estate</p>
+                </a>
+                <a href="/upgrades/" class="related-card">
+                    <h3>Permanent Upgrades</h3>
+                    <p>All permanent bonuses and how to get them</p>
+                </a>
+            </div>
+        </section>
+    </article>
+
+    <footer class="footer">
+        <p>© 2025 BluePrinceWiki.com · Not affiliated with Dogubomb or Raw Fury</p>
+        <p style="margin-top: 8px;">
+            <a href="https://store.steampowered.com/app/1569580/Blue_Prince/" target="_blank">Get Blue Prince on Steam</a>
+        </p>
+    </footer>
+</body>
+</html>
